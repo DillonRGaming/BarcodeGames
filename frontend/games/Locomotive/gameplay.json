@@ -1,0 +1,112 @@
+{
+    "global_loops": [
+        {
+            "type": "music",
+            "file": "ambience.mp3",
+            "volume": 0.1
+        },
+        {
+            "type": "random_sound",
+            "file": "horn.mp3",
+            "min_interval": 15000,
+            "max_interval": 45000,
+            "volume": 0.2
+        }
+    ],
+    "sequences": {
+        "intro": [
+            {
+                "type": "log",
+                "message": "Lobby started - playing menu music with fade in"
+            },
+            {
+                "type": "music",
+                "action": "play",
+                "file": "main-menu.mp3",
+                "id": "menu_music",
+                "loop": true,
+                "volume": 0.5,
+                "fade_in": 2000
+            }
+        ],
+        "game_start": [
+            {
+                "type": "log",
+                "message": "Game Starting Sequence Initiated"
+            },
+            {
+                "type": "music",
+                "action": "fade_out",
+                "id": "menu_music",
+                "duration": 1500
+            },
+            {
+                "type": "delay",
+                "ms": 600
+            },
+            {
+                "type": "countdown",
+                "seconds": 3,
+                "volume": 0.8
+            },
+            {
+                "type": "music",
+                "action": "play",
+                "file": "in-game.mp3",
+                "id": "game_music",
+                "loop": true,
+                "volume": 0.5,
+                "fade_in": 2000
+            },
+            {
+                "type": "delay",
+                "ms": 2000
+            },
+            {
+                "type": "voice",
+                "file": "intro.mp3",
+                "volume": 1,
+                "length": 8500,
+                "duck_volume": 0.3
+            },
+            {
+                "type": "delay",
+                "ms": 3000
+            },
+            {
+                "type": "train",
+                "action": "move_next",
+                "sound": "woosh2.mp3",
+                "volume": 1
+            },
+            {
+                "type": "delay",
+                "ms": 2000
+            },
+            {
+                "type": "train",
+                "action": "release_last",
+                "sound": "release.mp3",
+                "volume": 1.0
+            },
+            {
+                "type": "delay",
+                "ms": 4000
+            },
+            {
+                "type": "camera",
+                "mode": "inside",
+                "sound": "woosh2.mp3",
+                "volume": 0.5
+            },
+            {
+                "type": "wall",
+                "visible": false
+            },
+            {
+                "type": "delay",
+                "ms": 2000
+            }
+        ]
+    }
+}

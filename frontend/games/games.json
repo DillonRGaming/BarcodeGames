@@ -1,0 +1,33 @@
+[
+    {
+        "id": "Locomotive",
+        "name": "Locomotive",
+        "minPlayers": 2,
+        "maxPlayers": 8,
+        "thumbnail": "games/Locomotive/assets/locomotive.png",
+        "titleImage": "games/Locomotive/assets/locomotive.png",
+        "loadingIcon": "games/Locomotive/assets/wheel.png",
+        "hostAssets": [
+            "games/Locomotive/assets/cart.png",
+            "games/Locomotive/assets/cloud1.png",
+            "games/Locomotive/assets/cloud2.png",
+            "games/Locomotive/assets/connector.png",
+            "games/Locomotive/assets/engine-cart.png",
+            "games/Locomotive/assets/engine-wheel-small.png",
+            "games/Locomotive/assets/engine-wheel.png",
+            "games/Locomotive/assets/wall.png",
+            "games/Locomotive/assets/wheel-pivot.png",
+            "games/Locomotive/assets/wheel.png",
+            "games/Locomotive/assets/ambience.mp3",
+            "games/Locomotive/assets/ding.mp3",
+            "games/Locomotive/assets/horn.mp3",
+            "games/Locomotive/assets/in-game.mp3",
+            "games/Locomotive/assets/intro.mp3",
+            "games/Locomotive/assets/main-menu.mp3",
+            "games/Locomotive/assets/release.mp3",
+            "games/Locomotive/assets/woosh1.mp3",
+            "games/Locomotive/assets/woosh2.mp3"
+        ],
+        "playerAssets": []
+    }
+]
